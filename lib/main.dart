@@ -85,8 +85,36 @@ class _HomePageState extends State<HomePage> {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4),
                 itemBuilder: (BuildContext context, int index) {
+                  if (index == 0) {
+                    return MyButton(
+                      /* Delete the input*/
+                      buttonTapped: () {
+                        setState(() {
+                          userQuestion = "";
+                        });
+                      },
+                      buttonText: buttons[index],
+                      color: Colors.red[400],
+                      textColor: Colors.white,
+                    );
+                  }
+                  if (index == 1) {
+                    return MyButton(
+                      buttonTapped: () {
+                        /* Delete the last thing in the string*/
+                        setState(() {
+                          if (userQuestion.length > 0)
+                            userQuestion = userQuestion.substring(
+                                0, userQuestion.length - 1);
+                        });
+                      },
+                      buttonText: buttons[index],
+                      color: Colors.deepPurple,
+                      textColor: Colors.white,
+                    );
+                  }
                   return MyButton(
-                      buttonTapped: isOperator(buttons[index])
+                      buttonTapped: buttons[index] == '='
                           ? () {}
                           : () {
                               setState(() {
