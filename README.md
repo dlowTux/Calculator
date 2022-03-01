@@ -1,16 +1,14 @@
-# calculator
+# Calculator
+A simple and free and open source calculator for Android and IOS
+Dependencies
 
-A new Flutter project.
+* "Dart"
 
-## Getting Started
+| Dependencies| Description |
+| ------ | ------ |
+| dart |  https://dart.dev/ |
+| flutter |  https://flutter.dev/ |
+| android studio |  https://developer.android.com/studio |
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Preview
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/k5QWCS8w/android.png' border='0' alt='android'/></a>
